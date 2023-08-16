@@ -276,9 +276,9 @@
     .LargeText h1 {
       width: 60vh;
     }
-    @media (max-width: 660px) {
+    @media (max-width: 360px) {
     .LargeText h1 {
-      width: 34vh;
+      width: 23vh;
   }
   .column1R h1 {
       text-align: center;
