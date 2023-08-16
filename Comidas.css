@@ -274,7 +274,7 @@
       margin: -2px;
     }
     .LargeText h1 {
-      width: 71vh;
+      width: 60vh;
     }
     @media (max-width: 660px) {
     .LargeText h1 {
