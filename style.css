@@ -241,15 +241,103 @@
       }
     }
     /* Fondo inicio/ Final */
-    #ImgContainer {
-      width: auto;  
-      height: 60vh;
-      display: flex;
-      flex: 1 2 100%;
-      justify-content: center;
-      position: relative;
-    }
-    .content {
+    /* sdasdasd */
+    @media (min-width:580px) {
+      
+      #ImgContainer {
+        width: auto;  
+        height: 60vh;
+        display: flex;
+        flex: 1 2 100%;
+        justify-content: center;
+        position: relative;
+      }
+      .content {
+        width: 236px;
+        height: 350px;
+        padding: auto;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(wepik-export-20230727175852IKrP.png);
+        background-size: 290px 390px;
+        background-repeat: no-repeat;
+        color: white;
+        overflow: hidden;
+        position: relative;
+        z-index: 10;
+        transition: 0.5s;
+      }
+      .contentPC:hover p{
+        color: white;
+      }
+    
+      .contentPC p {
+        padding: 15px;
+        text-align: center;
+        color: transparent;
+      }
+      .contentPC:hover {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: 0 -40px;
+      }
+    
+       .contentPC > h2 { 
+         margin-top: 410px;
+         transition: 0.5s;
+         z-index: 999;
+       }
+       .contentPC > p { 
+        z-index: 999;
+      }
+      .contentPC > input { 
+        z-index: 999;
+        border: 2px solid white;
+      }
+       .contentPC:hover > h2 {
+        margin-top: 0;
+        transition: 0.5s;
+       }
+      .contentPC:hover::after {
+        content: '';
+        width: 290px;
+        height: 300px;
+        display: flex;
+        bottom: 0;  
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
+        position: absolute;
+        filter: brightness(70%);
+      }
+      #button {
+        width: 23vh;
+        height: 8vh;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        display: flex;
+        flex: 0 1 6px;
+        flex-basis: 20px;
+        justify-content: center;
+      }
+  }
+
+/* asdasdasdasd */
+    @media (max-width:573px) {
+      #ImgContainer {
+     display: flex;
+     flex-direction: row;
+     justify-content: start;
+     position: relative;
+     flex-wrap: nowrap;
+     flex: 1 1 100%;
+     padding: 0;
+     margin: 0px;
+    }      .content {
       width: 236px;
       height: 350px;
       padding: auto;
@@ -267,70 +355,6 @@
       z-index: 10;
       transition: 0.5s;
     }
-    .content:hover p {
-      color: white;
-    }
-    .content p {
-      padding: 15px;
-      text-align: center;
-      color: transparent;
-    }
-    #button {
-      width: 23vh;
-      height: 8vh;
-      background-color: black;
-      color: white;
-      border-radius: 5px;
-      outline: none;
-      display: flex;
-      flex: 0 1 6px;
-      flex-basis: 20px;
-      justify-content: center;
-    }
-    .content:hover {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-position: 0 -40px;
-    }
-  
-     .content > h2 { 
-       margin-top: 410px;
-       transition: 0.5s;
-       z-index: 999;
-     }
-     .content > p { 
-      z-index: 999;
-    }
-    .content > input { 
-      z-index: 999;
-      border: 2px solid white;
-    }
-     .content:hover > h2 {
-      margin-top: 0;
-      transition: 0.5s;
-     }
-    .content:hover::after {
-      content: '';
-      width: 290px;
-      height: 300px;
-      display: flex;
-      bottom: 0;  /* 390px */
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
-      position: absolute;
-      filter: brightness(70%);
-    }
-    @media (max-width:573px) {
-      #ImgContainer {
-     display: flex;
-     flex-direction: row;
-     justify-content: start;
-     position: relative;
-     flex-wrap: nowrap;
-     flex: 1 1 100%;
-     padding: 0;
-     margin: 0px;
-    }
     .content {
       display: flex;
       padding: 0;
@@ -339,33 +363,84 @@
       flex-basis: 25vh;
       flex: 1 1 21vh;
     }
-    .content:hover {
+    .content h2 {
+      transform: rotate(270deg);
+    }
+    .contentPC p {
+      padding: 15px;
+      text-align: center;
+      color: transparent;
+      z-index: 5;
+    }
+    .contentPC > h2 { 
+      margin-top: 410px;
+      transition: 0.5s;
+      z-index: 4;
+    }
+    content p {
+      color: transparent;
+    }
+    .CartasInfo {
       flex-basis: 65vh; 
     }
-    .content:hover > h2 {
-      transform: rotate(0);
+    .CartasInfo > h2 {
+      margin-top: 0;
     }
-    .content:hover #button {
+    .CartasInfo #button{
       display: block;
     }
     .content p {
       color: transparent;
     }
-    .content:hover p {
+    .CartasInfo p {
       color: white;
     }
-    .content #button {
-      display: none;
+    .CartasInfo #button {
+      display: block;
     }
-    .content > h2 {
-      transform: rotate(-90deg);
+    .CartasInfo > h2 {
+      transform: rotate(0);
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       position: relative;
-      margin-top: auto;
-      bottom: -44px;
+      margin-top: -7px;
+      bottom: -0;
+      z-index: 5;
+    }
+    .CartasInfo:hover:after {
+      content: '';
+      width: 290px;
+      height: 300px;
+      display: flex;
+      bottom: 0;  
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
+      position: absolute;
+      filter: brightness(70%);
+    }
+    .CartasInfo {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-position: 0 -40px;
+    }
+    .contentPC::after {
+      content: none;
+    }
+    #button {
+      width: 23vh;
+      height: 10vh;
+      aspect-ratio: 2/5;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      outline: none;
+      display: flex;
+      flex: 0 1 1px;
+      flex-basis: 20px;
+      justify-content: center;
+      z-index: 6;
     }
   }
   /* Comidas, bebidas, religion etc */
