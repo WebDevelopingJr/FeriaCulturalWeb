@@ -276,14 +276,14 @@
     .LargeText h1 {
       width: 70vh;
     }
-    @media (max-width:560px) {
+    @media (max-width: 660px) {
     .LargeText h1 {
-      width: 44vh;
+      width: 24vh;
   }
   .column1R h1 {
       text-align: center;
       font-family: Arial,Helvetica,sans-serif;
-      font-size: 33px;
+      font-size: 25px;
       margin-top: 18px;
       margin: -2px;
   }
