@@ -128,8 +128,11 @@
           align-items: center;
           flex-direction: column;
           width: 100%; 
+          text-decoration: none;
         }
-
+        .menu-activo a.links {
+          text-decoration: none;
+        }
         .menu li {
           padding: 20px;
           text-decoration: none;
@@ -289,13 +292,13 @@
        .contentPC > h2 { 
          margin-top: 410px;
          transition: 0.5s;
-         z-index: 999;
+         z-index: 8;
        }
        .contentPC > p { 
-        z-index: 999;
+        z-index: 7;
       }
       .contentPC > input { 
-        z-index: 999;
+        z-index: 6;
         border: 2px solid white;
       }
        .contentPC:hover > h2 {
@@ -312,9 +315,9 @@
         position: absolute;
         filter: brightness(70%);
       }
-      #button {
+      .content a #button {
         width: 23vh;
-        height: 8vh;
+        height: 5vh;
         background-color: black;
         color: white;
         border-radius: 5px;
@@ -322,7 +325,20 @@
         display: flex;
         flex: 0 1 6px;
         flex-basis: 20px;
+        z-index: 9;
         justify-content: center;
+        transition: 0.5s;
+        align-items: center;
+        text-decoration: none;
+      }
+      .content a #button:hover {
+        background: white;
+        color: black;
+        text-decoration: none;
+      }
+      .contentPC a {
+        z-index: 10;
+        text-decoration: none;
       }
   }
 
@@ -428,10 +444,10 @@
     .contentPC::after {
       content: none;
     }
-    #button {
+    .content a #button {
       width: 23vh;
-      height: 10vh;
-      aspect-ratio: 2/5;
+      height: 6vh;
+      aspect-ratio: 2/2;
       background-color: black;
       color: white;
       border-radius: 5px;
@@ -440,7 +456,21 @@
       flex: 0 1 1px;
       flex-basis: 20px;
       justify-content: center;
-      z-index: 6;
+      font-size: 15px;
+      align-items: center;
+      transition: 0.5;
+    }
+    .contentPC a {
+      z-index: 1;
+    }
+    .content a #button:hover {
+      background: white;
+      color: black;
+      text-decoration: none;
+    }
+    .contentPC a {
+      z-index: 10;
+      text-decoration: none;
     }
   }
   /* Comidas, bebidas, religion etc */
