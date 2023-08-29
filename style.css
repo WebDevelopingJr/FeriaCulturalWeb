@@ -576,3 +576,13 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width:895px) {
+  footer {
+    height: 65vh;
+  }
+}
+@media (max-width:500px) {
+  footer {
+    height: 70vh;
+  }
+}
