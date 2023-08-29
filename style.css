@@ -29,6 +29,8 @@
     .menuScroll .imagen {
        display: block;
        transition: 0.5s;
+       min-width: 21vh;
+       width: 10vh;
     }
     .menu-imagen {
       display: none;
