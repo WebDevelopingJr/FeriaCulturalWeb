@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Comidas.css">
-    <link rel="Icon" href="worldwide_814513.png">
+    <link rel="Icon" href="worldwide_814513.svg">
     <title>Feria Cultural 2023/Informacion-General</title>
 </head>
 <body>
 <header>
   <nav id="nav-bar"><!-- Numero de tabla, de donde tome la informacion,nombre de la tabla va a ir un ddocumento en frio osea que va a estar referia a anexos -->
     <div class="imagenes">
-        <a href="index.html"><img src="worldwide_814513.png" alt="imagen" class="imagen" style="mix-blend-mode: darken;"></a>
+        <a href="index.html"><img src="Log-Feria-Pureza-Web.png" alt="imagen" class="imagen" style="mix-blend-mode: darken;"></a>
         <img src="menu (1).png" alt="menu" class="menu-imagen" style="mix-blend-mode: darken;">
     </div>
             <ul class="menu">
                 <a class="links" href="index.html"><li class="elements">Home</li></a>
-                <a class="links" href="#"><li class="elements">About</li></a>
+                <a class="links" href="Informacion.html"><li class="elements">About</li></a>
                 <a class="links" href="#"><li class="elements">blog</li></a>
                 <a class="links" href="#"><li class="elements">contact</li></a>
             </ul>
@@ -26,15 +26,23 @@
 <!-- Fondo inicio -->
     <div class="Container-info">
     <div class="container-Text">
-        <img src="Logo-Pureza_clipdrop-background-removal.png" alt="img" style="width: 55vh;">
+        <img src="Logo-Pureza.svg" alt="img" style="width: 45vh; filter: brightness(10%);">
         <div class="textContainer">
             <h1> Informacion General </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusantium in alias dolores facere? Officia dolores cupiditate accusantium commodi voluptatem, pariatur recusandae assumenda nemo nulla animi eaque expedita maxime excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quaerat nam repellendus soluta magni voluptatibus, impedit omnis, et ad, rem sunt odit? Dolorum tenetur ducimus rem quod quibusdam ea obcaecati.</p>
        </div>
     </div>
-        <img src="Fondo-blanco.jpg" alt="fondo" class="fondo" style="filter: opacity(7 0);">
+        <img src="fondo-morado-azul-degradado-palabra-ombre.jpg" alt="fondo" class="fondo" style="filter: opacity(100);">
     </div>
     <style>
+        body {
+      --Color-orange-logo: #D9603E;
+      --Color-grey-logo: #42505E;
+      --Color-blue-logo: #0163B9;
+      --Color-green-logo: #7BCC48;
+      --Color-yellow-logo: #FDF459;
+      --Color-red-logo: #990000;
+        }
         .Informacion_Cuadros {
             width: 100%;
             height: 100vh;
@@ -46,8 +54,9 @@
             flex-wrap: wrap;
         }
         .cubesContainer {
-            width: 50vh;
-            height: 65vh;
+            width: 55vh;
+            height: 68vh;
+            background-color: wheat;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -58,6 +67,7 @@
         .cubesContainer a button {
             width: 25vh;
             height: 5vh;
+            background-color: rgb(240, 234, 223);
             transition: 0.3s;
         }
         .cubesContainer a button:hover {

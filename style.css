@@ -7,6 +7,12 @@
       margin: 0;
       background-color: #fff;
       min-height: 100%;
+      --Color-orange-logo: #D9603E;
+      --Color-grey-logo: #42505E;
+      --Color-blue-logo: #0163B9;
+      --Color-green-logo: #7BCC48;
+      --Color-yellow-logo: #FDF459;
+      --Color-red-logo: #990000;
     }
     #nav-bar.menuScroll {
       background-color: rgba(255, 255, 255, 0.87);
@@ -20,13 +26,23 @@
     #nav-bar.menuScroll li {
       color: black;
     }
+    .menuScroll .imagen {
+       display: block;
+       transition: 0.5s;
+    }
+    .menu-imagen {
+      display: none;
+
+    }
     .imagen {
-      width: 13vh;
-      min-width: 10vh;
+      width: 25vh;
+      min-width: 25vh;
       z-index: 1;
       flex: none 0 120px;
       position: relative;
       margin-left: 15px;
+      display: none;
+      transition: 0.5s;
     }
     .menu-imagen {
       display: none;
@@ -38,7 +54,7 @@
     }
     #nav-bar {
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
       background-color: transparent;
       color: black;
@@ -72,15 +88,16 @@
     }
     @media (max-width:648px) {
       .menu-imagen {
-          display: block;
-          width: 5%;
-          height: 100px;
-          object-fit: contain;
-          aspect-ratio: 2/1;
-        }
+        display: block;
+        width: 5%;
+        height: 100px;
+        margin-top: -7px;
+        object-fit: contain;
+        aspect-ratio: 2/1;
+      }
         #nav-bar {
           display: block;
-          height: 14.1vh;
+          height: 16.1vh;
         }
         #nav-bar>.menu-imagen {
           display: grid;
@@ -88,14 +105,18 @@
         }
         .imagen {
           width: 10vh;
-          display: flex;
+          display: none;
           flex-wrap: wrap;
-          transition: 0.3s;
+          transition: 0.3s; /* aca es aca ees aca es aca es aacac eas */
         }
+      .menuScroll .imagen {
+       display: block;
+       transition: 0.5s;
+    }
         .imagenes {
           display: flex;
           justify-content: space-around;
-          align-items: center;
+          align-items: start;
         }
         .menu {
           display: flex;
@@ -176,8 +197,9 @@
     }
     .container-Text img {
       display: flex;
-      width: 35vh;
+      width: 80vh;
       flex-basis: 60vh;
+      filter: brightness(120%);
     }
     .Container-info .fondo {
       width: 100%;
@@ -318,8 +340,8 @@
       .content a #button {
         width: 23vh;
         height: 5vh;
-        background-color: black;
-        color: white;
+        background-color: var(--Color-orange-logo);
+        color: black;
         border-radius: 5px;
         outline: none;
         display: flex;
@@ -332,8 +354,8 @@
         text-decoration: none;
       }
       .content a #button:hover {
-        background: white;
-        color: black;
+        background: var(--Color-blue-logo);
+        color: white;
         text-decoration: none;
       }
       .contentPC a {
@@ -353,7 +375,8 @@
      flex: 1 1 100%;
      padding: 0;
      margin: 0px;
-    }      .content {
+    }      
+    .content {
       width: 236px;
       height: 350px;
       padding: auto;
@@ -448,7 +471,7 @@
       width: 23vh;
       height: 6vh;
       aspect-ratio: 2/2;
-      background-color: black;
+      background-color: var(--Color-orange-logo);
       color: white;
       border-radius: 5px;
       outline: none;
@@ -458,15 +481,16 @@
       justify-content: center;
       font-size: 15px;
       align-items: center;
-      transition: 0.5;
+      transition: 1s;
     }
     .contentPC a {
       z-index: 1;
     }
     .content a #button:hover {
-      background: white;
+      background: var(--Color-blue-logo);
       color: black;
       text-decoration: none;
+      transition: 1s;
     }
     .contentPC a {
       z-index: 10;
@@ -514,13 +538,12 @@
   mix-blend-mode: darken;
 }
 .elementsContainer .button:hover {
-   width: 270px;
-   height: 40px;
-  background: rgb(29, 150, 231);
+   width: 260px;
+   height: 38px;
+  background: var(--Color-green-logo);
   transition: 0.5s;
   font-size: 20px;
   color: white;
-  cursor: pointer;
 }
 .elementsContainer .button {
     width: 250px;
@@ -537,4 +560,17 @@
   width: 100%;
   text-align: center;
   justify-content: center;
+}
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: var(--Color-grey-logo);
+}
+.footerContainer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }

@@ -7,6 +7,12 @@
     margin: 0;
     background-color: #ffffff;
     min-height: 100%;
+    --Color-orange-logo: #D9603E;
+    --Color-grey-logo: #42505E;
+    --Color-blue-logo: #0163B9;
+    --Color-green-logo: #7BCC48;
+    --Color-yellow-logo: #FDF459;
+    --Color-red-logo: #990000;
   }
   #nav-bar.menuScroll {
     background-color: rgba(255, 255, 255, 0.87);
@@ -16,15 +22,16 @@
  .menuScroll .elements {
     color: black;
     transition: 0.7s;
+    text-decoration: none;
   }
   #nav-bar.menuScroll li {
     color: black;
   }
   .imagen {
-    width: 13vh;
-    min-width: 8vh;
+    width: 25vh;
+    min-width: 23vh;
     z-index: 1;
-    flex: none 0 90px;
+    flex: none 0 120px;
     position: relative;
     margin-left: 15px;
   }
@@ -35,6 +42,7 @@
   .menu .elements {
     width: 100px;
     color: white;
+    text-decoration: none;
   }
   #nav-bar {
     display: flex;
@@ -53,6 +61,7 @@
     padding: 9px;
     font-size: 23px;
     color: white;
+    text-decoration: none;
   }
   .links::after {
     content: '';
@@ -62,25 +71,31 @@
   }
   .menu-activo {
     margin-top: 0;
+    text-decoration: none;  
   }
   .menu .elements {
     width: 100px;
     color: white;
+    text-decoration: none;  
   }
   .menuScroll {
     background-color: black;
+  }
+  a.links {
+    text-decoration: none;
   }
   @media (max-width:648px) {
     .menu-imagen {
         display: block;
         width: 5%;
         height: 100px;
+        margin-top: -7px;
         object-fit: contain;
         aspect-ratio: 2/1;
       }
       #nav-bar {
         display: block;
-        height: 14.1vh;
+        height: 16.1vh;
       }
       #nav-bar>.menu-imagen {
         display: grid;
@@ -95,7 +110,7 @@
       .imagenes {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: start;
       }
       .menu {
         display: flex;
@@ -110,6 +125,7 @@
         transition: 0.5s;
         position: fixed;
         width: 100%;
+        text-decoration: none;
       }
       .menuScroll .menu-activo {
         background-color: rgba(255, 255, 255, 0.87);
@@ -117,6 +133,7 @@
       .menu li {
           display: block;
           color: white;
+          text-decoration: none;
       }
       .menu-activo {
         margin-top: -0.6%;
@@ -128,6 +145,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%; 
+        text-decoration: none;
       }
 
       .menu li {
@@ -146,6 +164,7 @@
       .menu .elements {
         width: 100px;
         color: white;
+        text-decoration: none;
       }
   }
   /*Fin Menu */
@@ -250,45 +269,18 @@
   /* Columnas */
     .InfoGeneral {
      width: 100%;
-     height: 210vh;
+     height: 150vh;
      display: flex;
   }
-  @media (max-width:1265px) {
-       .InfoGeneral{
-        height: 273vh;
-       } 
-  }
-  @media (max-width:1079px) {
-        .InfoGeneral {
-          height: 301vh;
-        }
-  }
-  @media (max-width:900px) {
-    .InfoGeneral {
-      height: 492vh;
-    }
-}
-@media (max-width:951px) {
-  .InfoGeneral {
-    height: 329vh;
-  }
-}
-@media (max-width:880px) {
-  .InfoGeneral {
-    height: 472vh;
-  }
-}
-@media (max-width:549px) {
-  .InfoGeneral {
-    height: 519vh;
-  }
-}
     .column1R {
       width: auto;
       height: auto;
       display: flex;
       flex-direction: column;
       flex: 1 1 100%;
+      margin: 3px;
+      padding: 1px;
+      position: relative;
     }
     .column1R p {
       padding: 5px;
@@ -297,15 +289,16 @@
       color: #5f5c5c;
     }
     .column1R h1 {
-      text-align: center;
-      font-size: 45px;
+      text-align: start;
+      font-size: 35px;
       margin-top: 18px;
-      margin: -2px;
+      margin: 4px;
+      border-bottom: 5px solid var(--Color-yellow-logo);
     }
     .LargeText h1 {
-      width: 66vh;
+      width: 55vh;
     }
-  @media (max-width:360px) {
+  @media (max-width:560px) {
     .LargeText h1 {
       width: 55vh;
   }
@@ -315,6 +308,7 @@
       font-size: 33px;
       margin-top: 18px;
       margin: -2px;
+
   }
 }
     .icons a{
@@ -337,13 +331,3 @@
   .openButton {
     display: none;
   }
-@media (max-width:956px) {
-}
-.borderText {
-  width: 10vh;
-  height: 10vh;
-  border-bottom: 10px solid rgb(28, 142, 218);
-  position: relative;
-  margin: 15px;
-  margin-bottom:15px;
-}
