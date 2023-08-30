@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
   }
     /* Inicio menu */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
     body {
       margin: 0;
       background-color: #fff;
@@ -13,6 +15,7 @@
       --Color-green-logo: #7BCC48;
       --Color-yellow-logo: #FDF459;
       --Color-red-logo: #990000;
+      
     }
     #nav-bar.menuScroll {
       background-color: rgba(255, 255, 255, 0.87);
@@ -56,7 +59,7 @@
     }
     #nav-bar {
       display: flex;
-      align-items: start;
+      align-items: center;
       justify-content: space-between;
       background-color: transparent;
       color: black;
@@ -98,8 +101,10 @@
         aspect-ratio: 2/1;
       }
         #nav-bar {
-          display: block;
+          display: flex;
+          justify-content: center;
           height: 14.1vh;
+          align-items: center;
         }
         #nav-bar>.menu-imagen {
           display: grid;
@@ -222,10 +227,12 @@
     .textContainer h1 { 
       padding: 15px;
       padding-right: 20px;
+      font-family: 'Roboto', sans-serif;
     }
     .textContainer p {
       padding: 10px;
       padding-right: 20px;
+      font-family: 'Roboto', sans-serif;
     }
     @media (max-width:922px) {
       .Container-info > .container-Text {
@@ -296,6 +303,7 @@
         position: relative;
         z-index: 10;
         transition: 0.5s;
+        font-family: 'Open Sans', sans-serif;
       }
       .contentPC:hover p{
         color: white;
@@ -506,6 +514,7 @@
   flex: 1 1 100%;
   flex-wrap: wrap;
   justify-content: center;
+  font-family: 'Open Sans', sans-serif;
 }
 @media (max-width:1326px) {
   .containerFood {
