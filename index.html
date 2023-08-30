@@ -98,31 +98,32 @@
 </div>
 </body>
 <footer>
-    <div class="footerContainer">
-        <div class="containerImg" style="display: flex;align-items: center;justify-content: center;flex-wrap: nowrap;">
-            <img src="Log-Feria-Pureza-Web.png" alt="Logo-Feria-Pureza" class="footerLogo" style="width: 14vw;min-width: 29vh; margin: 10px;">
-            <a href="#footerSe" onclick="window.open('https://www.pmaria-managua.org/')"><img src="Logo-Pureza.svg" alt="Pureza" class="purezaFot" style="width: 6vw;    min-width: 10vh; margin: 45px;"></a>
-        </div>
-    <div class="allContainer">
-        <div class="textContainer" style="text-align: start;width: 348px;display: flex;flex-direction: column;align-items: start;">
-        <p>Derechos Reservados 2023, Coleguio Pureza de Maria, Managua</p>
-        <p>Diseño y deagramacion, Nestor Castillo Espinosa</p>
-    </div>
-       <div class="icons" style="display: flex;width: 187px; height: 87px; justify-content: space-around; align-items: center;">
-        <div onclick="window.open('https://www.instagram.com/pmariamanagua/?hl=es')" class="icon1"></div>
-        <div onclick="window.open('https://www.facebook.com/people/Colegio-Pureza-De-Mar%C3%ADa-Mga/100063892570364/')" class="icon2" style="width: 6.3vh; height: 2.4em;"></div>
-        <div onclick="window.open('https://twitter.com/pmariamanagua?lang=es')" class="icon3" style="width: 6.7vh; height: 2.5em;"></div>
-       </div>
-    </div>
+    <img src="Log-Feria-Pureza-Web.png" alt="Logo-Pureza" class="logoPureza" style="width: 30vh; margin: 20px; flex: 0 1 5vh;max-width: 29vh; min-width: 29vh;">
+    <a href="#" onclick="window.open('https://www.pmaria-managua.org/')" style="width: auto; height: auto;"><img src="Logo-Pureza.svg" alt="Pureza-log-Colegio" style="width: 15vh; margin: 20px;" class="logo-pureza-colegio"></a>
+    <div class="footerTextContainer" style="display: flex; flex-direction: column; margin: 20px; color: white;">
+    <h3>Derechos Reservados 2023, Colegio Pureza de Maria, Managua</h3>
+    <h4>Diseño y diagramacion, Nestor Castillo Espinosa</h4>
+</div>
+<div class="icons">
+    <div class="icon1" style="width: 6.7vh; height: 2.8em;"></div>
+    <div class="icon2" style="width: 6.7vh; height: 2.8em;"></div>
+    <div class="icon3" style="width: 6.7vh; height: 2.8em;"></div>
 </div>
 </footer>
 <section id="footerSe"></section>
 <style>
-    .icon1 {
+   .icons {
+    width: 45vh;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .icon1 {
         width: 6.5vh;
         height: 2.5em;
         background-image: url(instagram.png); 
-        background-size: 35px; 
+        background-size: 40px; 
         background-repeat: no-repeat;
         transition: 0.5s;
     }
@@ -132,7 +133,7 @@
     }
     .icon2 {
         background-image: url(facebook.png); 
-        background-size: 34px; 
+        background-size: 41px; 
         background-repeat: no-repeat;
         transition: 0.5s;
     }
@@ -142,7 +143,7 @@
     }
     .icon3 {
         background-image: url(twitter.png); 
-        background-size: 34px; 
+        background-size: 40px; 
         background-repeat: no-repeat;
         filter: grayscale(100);
         transition: 0.5s;
@@ -151,28 +152,21 @@
         filter: grayscale(0);
         transition: 0.5s;
     }
-    .footerLogo {
+    .logoPureza {
         filter: grayscale(100);
         transition: 0.5s;
     }
-    .footerLogo:hover {
+    .logoPureza:hover {
         filter: grayscale(0);
         transition: 0.5s;
     }
-    .purezaFot {
+    a .logo-pureza-colegio {
         filter: grayscale(100);
         transition: 0.5s;
     }
-    .purezaFot:hover {
+    a .logo-pureza-colegio:hover {
         filter: grayscale(0);
         transition: 0.5s;
-    }
-    .allContainer {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-
     }
 </style>
 <script src="index.js"></script>
