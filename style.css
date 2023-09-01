@@ -35,20 +35,27 @@
        min-width: 23vh;
        width: 10vh;
     }
-    .menu-imagen {
-      display: none;
-
+    #nav-bar.menuScroll {
+      background-color: rgba(255, 255, 255, 0.87);
+      transition: 0.7s;
+      color: black;
+    }
+   .menuScroll .elements {
+      color: black;
+      transition: 0.7s;
+      text-decoration: none;
+    }
+    #nav-bar.menuScroll li {
+      color: black;
     }
     .imagen {
       width: 25vh;
-      min-width: 25vh;
+      min-width: 23vh;
       z-index: 1;
-      flex: none 0 120px;
       position: relative;
-      margin-left: 15px;
       display: none;
-      transition: 0.5s;
-    }
+      margin-left: 15px;
+  }
     .menu-imagen {
       display: none;
       flex: 0 1 5vh;
@@ -56,6 +63,7 @@
     .menu .elements {
       width: 100px;
       color: white;
+      text-decoration: none;
     }
     #nav-bar {
       display: flex;
@@ -74,6 +82,7 @@
       padding: 9px;
       font-size: 23px;
       color: white;
+      text-decoration: none;
     }
     .links::after {
       content: '';
@@ -83,28 +92,31 @@
     }
     .menu-activo {
       margin-top: 0;
+      text-decoration: none;  
     }
     .menu .elements {
       width: 100px;
       color: white;
+      text-decoration: none;  
     }
     .menuScroll {
       background-color: black;
     }
+    a.links {
+      text-decoration: none;
+    }
     @media (max-width:648px) {
       .menu-imagen {
-        display: block;
-        width: 5%;
-        height: 100px;
-        margin-top: -7px;
-        object-fit: contain;
-        aspect-ratio: 2/1;
-      }
+          display: block;
+          width: 5%;
+          height: 100px;
+          margin-top: -7px;
+          object-fit: contain;
+          aspect-ratio: 2/1;
+        }
         #nav-bar {
-          display: flex;
-          justify-content: center;
-          height: 14.1vh;
-          align-items: center;
+          display: block;
+          height: 16.1vh;
         }
         #nav-bar>.menu-imagen {
           display: grid;
@@ -113,17 +125,13 @@
         .imagen {
           width: 10vh;
           display: none;
-          flex-wrap: wrap;
-          transition: 0.3s; /* aca es aca ees aca es aca es aacac eas */
+          transition: 0.3s;
+          
         }
-      .menuScroll .imagen {
-       display: block;
-       transition: 0.5s;
-    }
         .imagenes {
           display: flex;
           justify-content: space-around;
-          align-items: center;
+          align-items: start;
         }
         .menu {
           display: flex;
@@ -138,6 +146,7 @@
           transition: 0.5s;
           position: fixed;
           width: 100%;
+          text-decoration: none;
         }
         .menuScroll .menu-activo {
           background-color: rgba(255, 255, 255, 0.87);
@@ -145,9 +154,10 @@
         .menu li {
             display: block;
             color: white;
+            text-decoration: none;
         }
         .menu-activo {
-          margin-top: -0.6%;
+          margin-top: 3.4%;
           transition: 0.5s;
           position: relative;
           display: flex;
@@ -158,9 +168,7 @@
           width: 100%; 
           text-decoration: none;
         }
-        .menu-activo a.links {
-          text-decoration: none;
-        }
+  
         .menu li {
           padding: 20px;
           text-decoration: none;
@@ -177,6 +185,7 @@
         .menu .elements {
           width: 100px;
           color: white;
+          text-decoration: none;
         }
     }
     /*Fin Menu */
@@ -295,7 +304,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url(wepik-export-20230727175852IKrP.png);
+        background-image: url(Imagen-Puntarenas.jpeg);
         background-size: 290px 390px;
         background-repeat: no-repeat;
         color: white;
@@ -395,7 +404,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url(wepik-export-20230727175852IKrP.png);
+      background-image: url(Imagen-Puntarenas.jpeg);
       background-size: 290px 390px;
       background-repeat: no-repeat;
       color: white;
