@@ -274,7 +274,7 @@
      display: flex;
   }
     .column1R {
-      width: auto;
+      width: 100%;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -313,6 +313,7 @@
       width: 55vh;
   }
   .column1R {
+    width: 100%;
     margin: 0;
     margin-left: 0;
     margin-right: 0;
